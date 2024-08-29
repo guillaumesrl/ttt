@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 45px;
+}
+
+.info {
+    width: 300px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.img {
+    width: 100%;
+}
+
+.line {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.line label, .line div {
+    display: flex;
+    align-items: center;
+}
+
+.line input, .line button {
+    padding: 5px 10px;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.current, .win {
+    font-size: 4rem;
+    color: green;
+}
+
+.lose {
+    font-size: 4rem;
+    color: red;
+}
+
+button {
+    width: 100%;
+}
+
+button:hover {
+    background-color: white;
+}
+
+button:active {
+    background-color: rgba(19, 20, 19, 0.21);
+    transform: translateY(4px);
+}
+
+.alert {
+    font-size: 1rem;
+    color: red;
+}
+
+header {
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1, h2 {
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2;
+    flex:0 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+.container {
+    width: fit-content;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    background-color: black;
+}
+
+.item {
+    background-color: white;
+    transition: all 0.3s ease;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:hover {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.item:active {
+    transform: scale(0.95);
+    background-color: #e0e0e0;
+}
